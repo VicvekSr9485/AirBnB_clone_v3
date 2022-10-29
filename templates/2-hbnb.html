@@ -19,6 +19,7 @@
   <body>
     <header>
       <div class="logo"></div>
+      <div id="api_status"></div>
     </header>
     <div class="container">
       <section class="filters">
@@ -47,7 +48,7 @@
 	    <ul>
 	      {% for amenity in amenities %}
 	      <li>
-		<input type="checkbox" data-id="{{amenity.name}}" data-name="{{amenit.name}}">{{ amenity.name }}
+		<input type="checkbox" data-id="{{amenity_name}}" data-name="{{amenity_name}}">{{ amenity.name }}
 	      </li>
 	      {% endfor %}
 	    </ul>
